@@ -7,79 +7,81 @@
     android:layout_height="match_parent"
     tools:context="com.example.nightfury.true_caller.Dialer_Activity">
 
-    <EditText
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edittext"
-
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/tv_number"
+        android:textSize="54dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_light"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edittext"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="70dp"
-        android:orientation="horizontal"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:weightSum="3"
-        android:id="@+id/linearLayout2">
-
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tv_number"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
 
         <Button
-            android:id="@+id/b1"
-            android:layout_width="0dp"
+            android:id="@+id/b_1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="1" />
 
         <Button
-            android:id="@+id/b2"
-            android:layout_width="0dp"
+            android:id="@+id/b_2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="2" />
 
         <Button
-            android:id="@+id/b3"
-            android:layout_width="0dp"
+            android:id="@+id/b_3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="3" />
-
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/linearLayout2"
-        android:layout_marginTop="55dp"
+        android:layout_below="@+id/linearLayout"
         android:orientation="horizontal"
-        android:weightSum="3">
+        android:id="@+id/linearLayout5">
 
         <Button
-            android:id="@+id/b4"
+            android:id="@+id/b_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="4" />
 
         <Button
-            android:id="@+id/b5"
+            android:id="@+id/b_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="5" />
 
         <Button
-            android:id="@+id/b6"
+            android:id="@+id/b_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -89,29 +91,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="175dp"
-        android:weightSum="3"
-        android:orientation="horizontal"
-        android:id="@+id/linearLayout3">
+        android:id="@+id/linearLayout6">
 
         <Button
-            android:id="@+id/b7"
+            android:id="@+id/b_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="7" />
 
         <Button
-            android:id="@+id/b8"
+            android:id="@+id/b_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="8" />
 
         <Button
-            android:id="@+id/b9"
+            android:id="@+id/b_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -121,30 +124,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout6"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayout3"
-        android:layout_marginTop="5dp"
-        android:orientation="horizontal"
-        android:id="@+id/linearLayout4"
-        android:weightSum="3">
+        android:id="@+id/linearLayout7">
 
         <Button
-            android:id="@+id/bstar"
+            android:id="@+id/b_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="*" />
 
         <Button
-            android:id="@+id/b0"
+            android:id="@+id/b_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="0" />
 
         <Button
-            android:id="@+id/bhash"
+            android:id="@+id/b_hash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -154,35 +157,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayout4"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        android:id="@+id/linearLayout">
+        android:layout_below="@+id/linearLayout7"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/dial1"
+            android:id="@+id/b_call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5"
+            android:layout_weight="2.5"
             android:text="CALL" />
 
         <Button
-            android:id="@+id/dial2"
+            android:id= "@+id/bclear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight=".9"
-            android:text="Save" />
+            android:text="x"
+            android:layout_weight=".4"/>
 
         <Button
-            android:id="@+id/del"
+            android:id="@+id/b_clear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="x" />
+            android:layout_weight=".4"
+            android:text="CLEAR" />
     </LinearLayout>
+
 
 
     <LinearLayout
@@ -193,44 +196,46 @@
         android:weightSum="4"
         >
 
-        <Button
-            android:id="@+id/dial"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_weight="1"
-            android:text="Dialer"
-            />
+            android:orientation="horizontal"
+            android:weightSum="4">
 
-        <Button
-            android:id="@+id/search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="search"
-            android:layout_weight="1"
-            android:layout_alignParentBottom="true"
-            />
+            <ImageButton
+                android:onClick="showDialar"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/d" />
 
-        <Button
-            android:id="@+id/block"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Block"
-            android:layout_weight="1"
-            android:layout_alignParentBottom="true"
-            />
+            <ImageButton
+                android:onClick="showSearch"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/s" />
 
-        <Button
-            android:id="@+id/conatcts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contacts"
-            android:layout_weight="1"
-            android:layout_alignParentBottom="true"
-             />
+            <ImageButton
+                android:onClick="showBlocks"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/b" />
 
+            <ImageButton
+                android:onClick="showContacts"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/c" />
+
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

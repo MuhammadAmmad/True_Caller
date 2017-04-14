@@ -13,24 +13,24 @@ public class Block_Activity extends AppCompatActivity {
         setContentView(R.layout.block_layout);
     }
 
-    public void showDialer(View view){
-        Intent i = new Intent(this,Dialer_Activity.class);
+    public void showDialar(View view) {
+        Intent i = new Intent(this, Dialer_Activity.class);
         startActivity(i);
-
     }
 
-    public void showSearch(View view){
+    public void showContacts(View v) {
+        Intent i = new Intent(this, Contacts_Activity.class);
+        startActivity(i);
+    }
+
+    public void showBlocks(View v) {
+        Intent i = new Intent(this, Block_Activity.class);
+        startActivity(i);
+    }
+
+    public void showSearch(View v) {
         Intent i = new Intent(this, Search_Activity.class);
         startActivity(i);
     }
 
-    public void showBlock(View view){
-        Intent i = new Intent(this,Block_Activity.class);
-        startActivity(i);
-    }
-
-    public void showContacts(View view){
-        Intent i = new Intent(this,Contacts_Activity.class);
-        startActivity(i);
-    }
 }
