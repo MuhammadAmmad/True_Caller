@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.nightfury.true_caller.Block_Activity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:text="Block Activity Will Be Added...
-                    Thank You...."
-        android:textAllCaps="true"
-        android:textColor="@android:color/black"
-        android:textSize="24sp" />
 
 
     <LinearLayout
@@ -24,34 +16,34 @@
         android:weightSum="4">
 
         <ImageButton
+            android:onClick="showDialar"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            android:onClick="showDialar"
             android:scaleType="centerCrop"
             android:src="@drawable/d" />
 
         <ImageButton
+            android:onClick="showSearch"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            android:onClick="showSearch"
             android:scaleType="centerCrop"
             android:src="@drawable/s" />
 
         <ImageButton
+            android:onClick="showBlocks"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="showBlocks"
             android:scaleType="centerCrop"
             android:src="@drawable/b" />
 
         <ImageButton
+            android:onClick="showContacts"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="showContacts"
             android:scaleType="centerCrop"
             android:src="@drawable/c" />
 
