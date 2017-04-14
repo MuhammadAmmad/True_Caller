@@ -1,58 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.nightfury.true_caller.Search_Activity">
 
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_above="@+id/linearLayout5"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/img" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name Here"
+
+        ></SearchView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:weightSum="4"
-        >
+        android:orientation="horizontal"
+        android:weightSum="4">
 
-        <Button
-            android:id="@+id/dial"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
-            android:text="Dialer"
-            />
+            android:onClick="showDialar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/d" />
 
-        <Button
-            android:id="@+id/search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="search"
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
-            android:layout_alignParentBottom="true"
-            />
+            android:onClick="showSearch"
+            android:scaleType="centerCrop"
+            android:src="@drawable/s" />
 
-        <Button
-            android:id="@+id/block"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Block"
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_alignParentBottom="true"
-            />
+            android:onClick="showBlocks"
+            android:scaleType="centerCrop"
+            android:src="@drawable/b" />
 
-        <Button
-            android:id="@+id/conatcts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contacts"
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_alignParentBottom="true"
-            />
+            android:onClick="showContacts"
+            android:scaleType="centerCrop"
+            android:src="@drawable/c" />
+
 
     </LinearLayout>
 </RelativeLayout>
